@@ -1,32 +1,42 @@
-# React + TypeScript + Vite
+# University Admission Chatbot
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Ứng dụng chatbot hỗ trợ thí sinh tra cứu thông tin và nhận tư vấn tuyển sinh đại học.
 
-Currently, two official plugins are available:
+## Công nghệ
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19
+- TypeScript
+- Vite
+- Oxlint
 
-## React Compiler
+## Chức năng chính
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Chức năng | Mô tả |
+| --- | --- |
+| Đăng ký / Đăng nhập | Tạo và quản lý tài khoản người dùng. |
+| Chatbot tư vấn tuyển sinh | Hỏi đáp tự nhiên về trường và thông tin tuyển sinh. |
+| Tư vấn ngành học | Tư vấn các ngành mà trường đang đào tạo. |
+| Tư vấn phương thức xét tuyển | Cung cấp thông tin về xét điểm thi THPT, học bạ, ĐGNL và các phương thức xét tuyển riêng. |
+| Tư vấn điểm xét tuyển | Nhập điểm để đánh giá và tư vấn ngành hoặc phương thức phù hợp. |
+| Tra cứu điểm chuẩn | Xem điểm chuẩn theo ngành và năm tuyển sinh. |
+| Tra cứu học phí | Xem học phí theo ngành hoặc chương trình đào tạo. |
+| Tra cứu chỉ tiêu | Xem chỉ tiêu tuyển sinh của từng ngành. |
+| Tra cứu thông tin ngành | Xem mô tả ngành, chương trình học và cơ hội nghề nghiệp. |
+| Tra cứu thông tin tuyển sinh | Xem thời gian, hồ sơ và quy trình đăng ký xét tuyển. |
 
-## Expanding the Oxlint configuration
+## Khởi chạy project
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+Yêu cầu Node.js và npm.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Các lệnh hỗ trợ
+
+```bash
+npm run build
+npm run lint
+npm run preview
+```

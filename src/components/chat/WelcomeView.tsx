@@ -17,7 +17,7 @@ export function WelcomeView({ onSelectPrompt }: WelcomeViewProps) {
   return (
     <section className="welcome-view">
       <div className="welcome-heading">
-        <span className="eyebrow"><Sparkles size={14} /> Trợ lý AI tuyển sinh</span>
+        <span className="eyebrow"><Sparkles size={14} /> Trợ lý AI tuyển sinh MUCE</span>
         <h1>Chào bạn, hôm nay mình có thể giúp gì?</h1>
         <p>Hỏi đáp thông tin tuyển sinh, khám phá ngành học và tìm lựa chọn phù hợp với bạn.</p>
       </div>
